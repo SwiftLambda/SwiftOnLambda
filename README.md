@@ -83,7 +83,7 @@ In other words, this command runs a virtualized ubuntu containing IBM's Swift Ki
 The next docker commands look like this (with command line arguments in short form):
 
 ```sh
-$ docker run --rm -v "$(shell pwd)/src:/src" -w /src ibmcom/kitura-ubuntu /bin/bash -c 'cp /root/swift-3.0-RELEASE-ubuntu14.04/usr/lib/swift/linux/*.so /src/libs'
+$ docker run --rm -v "$(shell pwd)/src:/src" -w /src ibmcom/kitura-ubuntu /bin/bash -c 'cp /root/swift-3.0.2-RELEASE-ubuntu14.04/usr/lib/swift/linux/*.so /src/libs'
 $ docker run --rm -v "$(shell pwd)/src:/src" -w /src ibmcom/kitura-ubuntu /bin/bash -c 'cp /usr/lib/x86_64-linux-gnu/libicudata.so.52 /src/libs'
 $ ...
 
